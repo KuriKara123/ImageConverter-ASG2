@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Upload your Image</h1>
+        </header>
+        <main>
+            <section class="upload-section">
+                <label for="imageUploader" class="upload-label">
+                    <input type="file" id="imageUploader" accept="image/*">
+                    <span>Select Image</span>
+                </label>
+                <div class="buttons">
+                    <button id="convertGrayscale" class="btn">Convert to Grayscale</button>
+                    <button id="convertBlur" class="btn">Apply Blur</button>
+                </div>
+            </section>
+            <section class="preview-section">
+                <div class="canvas-container">
+                    <h2>Original Image</h2>
+                    <canvas id="originalCanvas"></canvas>
+                </div>
+                <div class="canvas-container">
+                    <h2>Edited Image</h2>
+                    <canvas id="editedCanvas"></canvas>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Developed by Juwan Ganteng</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
